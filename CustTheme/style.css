@@ -1,0 +1,92 @@
+/*
+Theme Name: test-theme
+Author: Edward Cronin
+Description: Multi-theme because of course
+Version: 1.0.0
+Text Domain: test-theme
+*/
+body {
+  margin: 0;
+  color: #7f7f7f;
+}
+
+header {
+  width: 95vw;
+  height: 5rem;
+  top: clamp(2rem, 2%, 4rem);
+  padding: 0 2.5rem;
+  position: absolute;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+header > *:first-child, .custom-logo { height: 98%; width: auto; } 
+header > * { height: 35px; }
+
+header > ul {
+  width: calc(10% + 15rem);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header > ul a {
+  font-size: min(18px, 24px);
+  color: white;
+}
+header > ul a:active {
+  color: white;
+}
+
+main {
+  width: 90vw;
+  height: 85vh;
+  padding: 10vh 5vw 5vh 5vw;
+  position: absolute;
+  top: 0;
+  background-color: #121212;
+  background-image: url('assets/bgs/hk_blog.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: background-image 1s fade-in;
+}
+
+#mainCont {
+  width: 100%;
+  height: 100%;
+  padding: 0 2.5rem;
+  border-radius: 25px;
+  background-color: #1c1c1c;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+article {
+  width: clamp(25rem, 40%, 40rem);
+  height: clamp(25rem, 40%, 40rem);
+  margin: clamp(2rem, 5%, 5rem);
+  border-radius: 25px;
+  background-color: #2e2e2e;
+  overflow: scroll;
+}
+
+footer {
+  width: 100vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 0;
+  background: none;
+}
