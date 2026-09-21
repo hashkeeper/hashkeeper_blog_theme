@@ -1,10 +1,11 @@
 /*
-Theme Name: test-theme
+Theme Name: Hashkeeper LLC Blog Theme
 Author: Edward Cronin
 Description: Multi-theme because of course
 Version: 1.0.0
 Text Domain: test-theme
 */
+
 body {
   margin: 0;
   color: #7f7f7f;
@@ -75,13 +76,15 @@ main {
 }
 
 article {
-  width: clamp(25rem, 40%, 40rem);
-  height: clamp(25rem, 40%, 40rem);
+  width: clamp(25rem, 40%, 25rem);
+  aspect-ratio: 1 / 1;
   margin: clamp(2rem, 5%, 5rem);
   border-radius: 25px;
   background-color: #2e2e2e;
   overflow: scroll;
 }
+
+
 
 footer {
   width: 100vw;

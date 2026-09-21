@@ -35,7 +35,7 @@
     <ul>
         <?php wp_list_categories( array(
             'title_li' => '', // Removes the "Categories" heading
-            'hide_empty' => 1, // Only shows categories with posts
+            'hide_empty' => 0, // Only shows categories with posts
         ) ); ?>
     </ul>
 </header>
