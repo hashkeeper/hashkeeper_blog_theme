@@ -11,8 +11,9 @@ get_header();
 <div id="mainCont">
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
-                    <a id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                        
+                    <!-- Replacing the article elements with divs wrapped in a elements -->
+                    <a id="post-<?php the_ID(); ?>" href="<?php the_permalink(); ?>">
+
                     </a>
 
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
