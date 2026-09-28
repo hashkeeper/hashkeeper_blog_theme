@@ -75,12 +75,15 @@ main {
   align-content: space-around;
 }
 
-article {
+a > div {
   width: clamp(25rem, 40%, 25rem);
   aspect-ratio: 1 / 1;
   margin: clamp(2rem, 5%, 5rem);
   border-radius: 25px;
   background-color: #2e2e2e;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: scroll;
 }
 
